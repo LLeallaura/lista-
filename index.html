@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lista de tarefa</title>
+    </head>
+    <body>
+        <h1>tarefas</h1>
+        <ul>
+            <li>Estudar company</li>
+            <li>Estudar confident</li>
+            <li>Estudar yummy</li>
+            <li>Estudar baby</li>
+        </ul>
+    </body>
+    <input>
+    <button onclick="add()">adicionar</button>
+    <script>
+        function add() {
+          const ul = document.querySelector ("ul")
+          const input = document.querySelector ("input")
+          const tarefa = input.value
+        
+          const li = document.createElement ("li")
+          li.innerText = tarefa
+          ul.appendChild(li) 
+          
+          input.value = ""
+        }
+    </script>
+</html>
